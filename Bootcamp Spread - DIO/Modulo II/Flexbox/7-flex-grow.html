@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Flex-Grow</title>
+    <style>
+        body {
+            background-color: grey;
+        }
+        
+        .container {
+            max-width: 300px;
+            border: 2px solid black;
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .item {
+            background-color: blueviolet;
+            padding: 10px;
+            margin: 5px;
+            text-align: center;
+            color: white;
+        }
+
+        .grow0 {
+            flex-grow: 0;
+        }
+
+        .grow1 {
+            flex-grow: 1;
+        }
+
+        .grow2 {
+            flex-grow: 2;
+        }
+
+        .grow3 {
+            flex-grow: 3;
+        }
+    </style>
+</head>
+<body>
+    <p>flex-grow 0</p>
+    <div class="container">
+        <div class="item grow0">A</div>
+        <div class="item grow0">B</div>
+        <div class="item grow0">C</div>
+        <div class="item grow0">D</div>
+    </div>
+
+    <p>flex-grow 1</p>
+    <div class="container">
+        <div class="item grow1">A</div>
+        <div class="item grow1">B</div>
+        <div class="item grow1">C</div>
+        <div class="item grow1">D</div>
+    </div>
+
+    <p>flex-grow alternados</p>
+    <div class="container">
+        <div class="item grow1">A</div>
+        <div class="item grow2">B</div>
+        <div class="item grow2">C</div>
+        <div class="item grow1">D</div>
+    </div>
+
+    <p>flex-grow </p>
+    <div class="container">
+        <div class="item grow2">AAAAAA</div>
+        <div class="item grow2">BBB</div>
+        <div class="item grow2">C</div>
+        <div class="item grow2">D</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Align-Content</title>
+    <style>
+        body {
+            background-color: grey;
+        }
+        
+        .container {
+            height: 400px;
+            max-width: 300px;
+            border: 1px solid black;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .item {
+            background-color: blueviolet;
+            padding: 0 5px;
+            margin: 5px;
+            text-align: center;
+            color: white;
+            flex: 1;
+        }
+
+        .stretch {
+            align-content: stretch;
+        }
+
+        .center {
+            align-content: center;
+        }
+
+        .start {
+            align-content: flex-start;
+        }
+
+        .end {
+            align-content: flex-end;
+        }
+
+        .around {
+            align-content: space-around;
+        }
+
+        .between {
+            align-content: space-between;
+        }
+
+        .column {
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <p>stretch</p>
+    <div class="container stretch">
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipisc eiusmod tempor </div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Lorem ipsum doloscing elit</div>
+        <div class="item">Lorem ipsum dolor sit amet, celit, sed do </div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur aeiusmod tempo</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipisc</div>
+        <div class="item">Lorem ipsum dolor sit cind do eiusmod tempor incididunt </div>
+    </div>
+
+    <p>center</p>
+    <div class="container center">
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipisc eiusmod tempor </div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Lorem ipsum doloscing elit</div>
+        <div class="item">Lorem ipsum dolor sit amet, celit, sed do </div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur aeiusmod tempo</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipisc</div>
+        <div class="item">Lorem ipsum dolor sit cind do eiusmod tempor incididunt </div>
+    </div>
+
+    <p>flex-start</p>
+    <div class="container start">
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipisc eiusmod tempor </div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Lorem ipsum doloscing elit</div>
+        <div class="item">Lorem ipsum dolor sit amet, celit, sed do </div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur aeiusmod tempo</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipisc</div>
+        <div class="item">Lorem ipsum dolor sit cind do eiusmod tempor incididunt </div>
+    </div>
+
+    <p>flex-end</p>
+    <div class="container end">
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipisc eiusmod tempor </div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Lorem ipsum doloscing elit</div>
+        <div class="item">Lorem ipsum dolor sit amet, celit, sed do </div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur aeiusmod tempo</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipisc</div>
+        <div class="item">Lorem ipsum dolor sit cind do eiusmod tempor incididunt </div>
+    </div>
+
+    <p>space-around</p>
+    <div class="container around">
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipisc eiusmod tempor </div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Lorem ipsum doloscing elit</div>
+        <div class="item">Lorem ipsum dolor sit amet, celit, sed do </div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur aeiusmod tempo</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipisc</div>
+        <div class="item">Lorem ipsum dolor sit cind do eiusmod tempor incididunt </div>
+    </div>
+
+    <p>space-between</p>
+    <div class="container between">
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipisc eiusmod tempor </div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item">Lorem ipsum doloscing elit</div>
+        <div class="item">Lorem ipsum dolor sit amet, celit, sed do </div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur aeiusmod tempo</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipisc</div>
+        <div class="item">Lorem ipsum dolor sit cind do eiusmod tempor incididunt </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+body {
+    background: grey;
+    font: normal 15pt Arial;
+}
+input {
+    background: black;
+    color: white;
+    font: normal 15pt Arial;
+    width: 100px;
+}
+#title {
+    color: rgb(177, 2, 2);
+}
