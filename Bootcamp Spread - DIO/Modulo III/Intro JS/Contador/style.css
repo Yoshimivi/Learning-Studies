@@ -1,0 +1,42 @@
+* {
+    font-family: sans-serif;
+}
+
+body {
+    background-color: rgb(171, 209, 241);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+p {
+    font-size: 20px;
+}
+
+div#contador {
+    font-size: 80px;
+    display: flex;
+    align-items: center;
+}
+
+span#atual {
+    margin: 0 30px;
+}
+
+input {
+    height: 3em;
+    width: 3em;
+    border-radius: 30%;
+    border: 0;
+    font-size: 15pt;
+    font-weight: 700;
+    margin: 0 3px;
+}
+
+#reset {
+    height: 2em;
+    width: 5em;
+    border-radius: 20%;
+    margin-top: 10px;
+}
